@@ -53,9 +53,23 @@ header a {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+
+section.secondary {
+  background-image: linear-gradient(
+      360deg,
+      rgba(3, 5, 4, 0.9) 0%,
+      rgba(2, 4, 3, 0.7) 51.55%,
+      rgba(11, 6, 32, 0.6) 100%
+    ),
+    url("../images/Yolanda-Gampp-06.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 200px 0;
 }
 
 main {
@@ -65,7 +79,6 @@ main {
 main h2 {
   font-family: "Poppins", sans-serif;
   font-size: 13px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: 5px;
@@ -80,17 +93,32 @@ main h2 {
 main h3 {
   font-family: "Playfair Display", serif;
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   color: #272044;
   margin: 0;
 }
 
+main h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
+main h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+
 main p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: #272044;
@@ -98,7 +126,7 @@ main p {
 }
 
 main a {
-font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
@@ -130,10 +158,62 @@ font-family: "Roboto", sans-serif;
   grid-template-columns: 1fr 2fr 2fr;
 }
 
-.img-responsive {
-  max-width: 100%;
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
+.img-responsive {
+  max-width: 100%;
+  display: block;
+
+}
+
+.text-center {
+  color: #fff;
+  text-align: center;
+}
+
+.card {
+  background-color: #fff;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 23px;
+}
+
+.card ul, li {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #272044;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+display: flex;
+padding: 16px 32px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+border-radius: 100px;
+color: #FFF;
+background: #885df1;
+text-decoration: none;
+}
+
+/* Styles for a regular hyperlink */
+.regular-link {
+  text-decoration: underline;
+  color: #000; /* or any other desired color */
+}
+
+ 
 footer {
   color: white;
   background-image: linear-gradient(rgba(2, 4, 3, 0.8), rgba(2, 4, 3, 0.8)),
@@ -194,6 +274,6 @@ footer a {
   }
 
   section {
-   padding: 30px; 
+    padding: 30px;
   }
 }
