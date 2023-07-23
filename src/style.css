@@ -163,7 +163,7 @@ main a {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 
 }
@@ -207,12 +207,10 @@ background: #885df1;
 text-decoration: none;
 }
 
-/* Styles for a regular hyperlink */
-.regular-link {
-  text-decoration: underline;
-  color: #000; /* or any other desired color */
+.embed {
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }
-
  
 footer {
   color: white;
@@ -275,5 +273,13 @@ footer a {
 
   section {
     padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
