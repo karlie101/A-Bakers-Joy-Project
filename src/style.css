@@ -140,6 +140,10 @@ main a {
   display: inline-block;
 }
 
+h2, h3 {
+  text-align: center;
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -160,7 +164,10 @@ main a {
 
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 25px;
 }
+
+
 
 .img-responsive {
   width: 100%;
@@ -210,6 +217,7 @@ text-decoration: none;
 .embed {
   width: 100%;
   aspect-ratio: 16 / 9;
+  
 }
  
 footer {
